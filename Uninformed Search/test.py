@@ -1,7 +1,7 @@
 import time
 from queue import PriorityQueue
 
-from Maps.maps import Map
+from Maps.maps import Map,Parser
 
 
 def uniform_cost(m: Map) -> list:
@@ -37,3 +37,7 @@ def uniform_cost(m: Map) -> list:
     print('Uninformed Search')
     print('Duration:', time.time() - start_time)
     return visited
+
+parser = Parser()
+m = parser.get_map(1)
+uniform_cost(m)
