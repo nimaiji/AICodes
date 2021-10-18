@@ -1,0 +1,13 @@
+Is higher blood pressure in the mom associated with a lower birth weight of her baby?  Simple linear regression explores the relationship of one continuous outcome (Y=birth weight) with one continuous predictor 
+(X=blood pressure).  At the heart of statistics is the fitting of models to data followed by an examination of how the models perform.   
+ 
+-1- “somewhat useful” 
+A fitted model is somewhat useful if it permits exploration of hypotheses such as “higher blood pressure during pregnancy is associated with statistically significant lower birth weight” and it permits assessment of confounding, effect modification, and mediation.  These are ideas that will be developed in BIOSTATS 640 Unit 5, Normal Theory Regression. 
+ 
+-2-	“more useful” 
+The fitted model is more useful if it can be used to predict the outcomes of future observations. For example, we might be interested in predicting the birth weight of the baby born to a mom with systolic blood pressure 145 mm Hg.  
+ 
+-3-	“most useful” 
+Sometimes, but not so much in public health, the fitted model derives from a physical-equation.  An example is Michaelis-Menton kinetics.  A Michaelis-Menton model is fit to the data for the purpose of estimating the actual rate of a particular chemical reaction.     
+ 
+Hence – “A linear model is a good first start only…”  

@@ -1,0 +1,3 @@
+Linear regression is a modelling technique for analysing data to make predictions. In simple linear regression, a bivariate model is built to predict a response variable from an explanatory variable 
+1. In multiple linear regression the model is extended to include more than one explanatory variable (x1,x2,....,xp) producing a multivariate model.
+This primer presents the necessary theory and gives a practical outline of the technique for bivariate and multivariate linear regression models. We discuss model building, assumptions for regression modelling and interpreting the results to gain meaningful understanding from data. Complex algebra is avoided as far as is possible and we have provided a reading list for more in-depth learning and reference.

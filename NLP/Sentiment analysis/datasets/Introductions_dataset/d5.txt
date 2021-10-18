@@ -1,0 +1,1 @@
+In the 100 series(1-4) the common univariate techniques (summarized in Table I) available for data analyses were discussed. These techniques do not allow us to take into account the effect of other covariates/ confounders (except for partial correlation(4)) in an analysis. In such situations, a Regression Model would be required.
