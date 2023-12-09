@@ -1,14 +1,36 @@
 # :brain: AICodes
-Nowadays we all know that how much AI and ML algorithms could impact our applications in various parts. Nonetheless, this repository was created with the purpose of sharing rudimentary and practical algorithms and concepts in this major. You can check out the contribution rules to know how you can join us for this help.
 
-List of existing projects:
-* Uninformed searches ( + Maps environment )
-* MinMax algorithm
-  * [Tic Tac Toe](https://github.com/nimaiji/AICodes/tree/master/MinMax)
-* Genetic algorithm
-  * [Sudoku](https://github.com/nimaiji/AICodes/tree/master/Genetic%20Algorithm)
-* [AI in InAppPurchas](https://github.com/nimaiji/AICodes/tree/master/InAppPurchase/aipurchase)
-* NLP
-  * [Sentiment analysis](https://github.com/nimaiji/AICodes/tree/master/NLP/Sentiment%20analysis)
-* Ensemble learning
-  * [Random forest (Fake tweets)](https://github.com/nimaiji/AICodes/tree/master/Ensemble%20learning/Fake%20tweets)
+In the rapidly evolving landscape of technology, the integration of Artificial Intelligence (AI) and Machine Learning (ML) algorithms has become pivotal in enhancing the capabilities of applications across diverse domains. This repository is dedicated to sharing foundational and practical algorithms, providing a valuable resource for developers seeking to harness the power of AI and ML in their projects. 
+
+## Contributing
+We welcome contributions from the community to enrich and expand the repository. Please refer to the [contribution guidelines](CONTRIBUTING.md) to learn how you can contribute to this collaborative effort.
+
+## List of Existing Projects:
+
+### Audio
+* [Music Genre Detection](https://github.com/nimaiji/AICodes/tree/master/ANN/Music%20Genre%20Detection)
+
+### Evolutionary Algorithm
+* [Museum Protection](https://github.com/nimaiji/AICodes/tree/master/Evolutionary%20Algorithm/Museum%20Protection)
+* [Sudoku](https://github.com/nimaiji/AICodes/tree/master/Genetic%20Algorithm)
+
+### AI in In-App Purchase
+* [In-App Purchase](https://github.com/nimaiji/AICodes/tree/master/InAppPurchase/aipurchase)
+
+### Natural Language Processing (NLP)
+* [Sentiment Analysis and Document Clustering](https://github.com/nimaiji/AICodes/tree/master/NLP/Sentiment%20analysis)
+
+### Ensemble Learning
+* [Detect AI-Generated Text](https://github.com/nimaiji/AICodes/tree/master/Ensemble%20learning/Detect%20AI%20Generated%20Text)
+* [Random Forest (Fake Tweets)](https://github.com/nimaiji/AICodes/tree/master/Ensemble%20learning/Fake%20tweets)
+
+### Searching Algorithms (+ Maps Environment)
+* [AStar](https://github.com/nimaiji/AICodes/blob/master/Uninformed%20Search/AStar.py)
+* [BFS](https://github.com/nimaiji/AICodes/blob/master/Uninformed%20Search/BFS.py)
+* [DFS](https://github.com/nimaiji/AICodes/blob/master/Uninformed%20Search/DFS.py)
+* [UCS](https://github.com/nimaiji/AICodes/blob/master/Uninformed%20Search/UCS.py)
+
+### MinMax Algorithm
+* [Tic Tac Toe](https://github.com/nimaiji/AICodes/tree/master/MinMax)
+
+Explore these projects to delve into the world of AI and ML algorithms, and leverage them in your applications for enhanced functionality and intelligence.
