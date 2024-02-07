@@ -7,6 +7,17 @@ We welcome contributions from the community to enrich and expand the repository.
 
 ## List of Existing Projects:
 
+
+### Image Segmentation
+* [Human Blood Vessel Segmentation](https://github.com/nimaiji/AICodes/tree/master/Semantic%20Segmentation/Blood%20Vessel%20Segmentation)
+
+### Natural Language Processing (NLP)
+* [Sentiment Analysis and Document Clustering](https://github.com/nimaiji/AICodes/tree/master/NLP/Sentiment%20analysis)
+
+### Ensemble Learning
+* [Detect AI-Generated Text](https://github.com/nimaiji/AICodes/tree/master/Ensemble%20learning/Detect%20AI%20Generated%20Text)
+* [Random Forest (Fake Tweets)](https://github.com/nimaiji/AICodes/tree/master/Ensemble%20learning/Fake%20tweets)
+
 ### Audio
 * [Music Genre Detection](https://github.com/nimaiji/AICodes/tree/master/ANN/Music%20Genre%20Detection)
 
@@ -16,13 +27,6 @@ We welcome contributions from the community to enrich and expand the repository.
 
 ### AI in In-App Purchase
 * [In-App Purchase](https://github.com/nimaiji/AICodes/tree/master/InAppPurchase/aipurchase)
-
-### Natural Language Processing (NLP)
-* [Sentiment Analysis and Document Clustering](https://github.com/nimaiji/AICodes/tree/master/NLP/Sentiment%20analysis)
-
-### Ensemble Learning
-* [Detect AI-Generated Text](https://github.com/nimaiji/AICodes/tree/master/Ensemble%20learning/Detect%20AI%20Generated%20Text)
-* [Random Forest (Fake Tweets)](https://github.com/nimaiji/AICodes/tree/master/Ensemble%20learning/Fake%20tweets)
 
 ### Searching Algorithms (+ Maps Environment)
 * [AStar](https://github.com/nimaiji/AICodes/blob/master/Uninformed%20Search/AStar.py)
