@@ -1,37 +1,84 @@
-# Human Blood Vessel Segmentation Using UNet - Kaggle competition
+# Human Blood Vessel Segmentation
 
-This repository contains the main notebook used in "SenNet + HOA - Hacking the Human Vasculature in 3D" Kaggle competition. The base architecture used in this notebook is UNet and implemented with Tensorflow. At first it preprocess all images (in competition Kidney scans) and use percentile normalization to emphasize features in the each image. Then converts each image to tensors. It wasn't possible to load the images into tensors at first because Tensorflow do not support .tiff encoding for loading data. Needs to be mentioned some data augmentation added in some versions of the model for better accuracy and TTA.
+**Paper:** *[Google Drive](https://drive.google.com/file/d/1Ilpa29iZdfE5dXlGCFHlxyfi3Nm9_Wap/view?usp=sharing)*  
+**Code:** *[Notebook](main-exp.ipynb)*  
+**Kaggle:** [Competition](https://www.kaggle.com/competitions/blood-vessel-segmentation)
+---
 
-```python
-def percentile_normalize(image, percentile=0.04):
-    lower_limit = np.percentile(image, percentile)
-    upper_limit = np.percentile(image, 100. - percentile)
-    if upper_limit - lower_limit == 0:
-        return image
-    normalized_image = np.clip(image, lower_limit, upper_limit)
-    normalized_image = (normalized_image - lower_limit) / (upper_limit - lower_limit)
-    return normalized_image
-```
+## Overview
 
-After all, there is a class that is a wrapper for the model. Iterative learning used to reach better accuracy and prevent corruptions during training process by implementing checkpoint scheduler. Different type of loss functions implemented to checkthe best fit for the problem (dice coef loss, binary corssentropy, both).
+This project presents a **computer vision and deep learning approach** for segmenting **human blood vessels** from medical imaging data.  
+The method leverages a **U-Net–based semantic segmentation architecture** applied to **3D HiP-CT kidney images**, combined with preprocessing, augmentation, and optimized loss functions to improve segmentation accuracy.
 
-```python
-class SentimentSegmentation():
+Accurate vessel segmentation can support:
 
-    def __init__(self, x, y, val_x, val_y, input_shape=(SIZE,SIZE,1), encoders=None, decoders=None):
-        self.seed = 2024
-        self.encoders = encoders
-        self.decoders = decoders
-        self.x_train = x
-        self.y_train = y
-        self.x_test = val_x
-        self.y_test = val_y
-        self.input_shape = input_shape
-        self.early_stopping = EarlyStopping(monitor='val_loss', patience=10, verbose=1)
-        self.generate()
-        self.gpus = tf.config.experimental.list_physical_devices('GPU')
-        self.checkpoint_path = "/kaggle/working/model_checkpoint.ckpt"
-        self.model_checkpoint = ModelCheckpoint(self.checkpoint_path, monitor='val_loss', verbose=1, save_best_only=False)
-    ...
-    
-```
+- Simulation of **blood, oxygen, and drug flow**
+- Analysis of **vasculature variations** across demographics
+- Automated replacement of **time-consuming manual annotation** in medical research 
+
+---
+
+## Abstract (Short)
+
+We propose a deep learning framework for **pixel-wise segmentation of human vasculature** using U-Net and HiP-CT imaging data.  
+The pipeline includes **normalization, resizing, elastic deformation, Gaussian noise, flipping, and test-time augmentation**, alongside **Dice Loss** and **Focal Tversky Loss** comparisons during training on a **Tesla P100 GPU**.  
+Results demonstrate how preprocessing choices, augmentation, and loss functions influence segmentation performance and biomedical applicability.
+
+---
+
+## Dataset
+
+- **3D HiP-CT kidney images** stored in `.tiff` format  
+- Multiple kidneys with varying **resolutions and label availability**  
+- Separate **image–label pairs** for supervised learning  
+- Limited dataset size, motivating **augmentation and careful train/validation splitting** 
+
+---
+
+## Methodology
+
+### 1. Preprocessing
+
+- Convert `.tiff` images into tensors  
+- **Normalize pixel values** and resize to **512×512**  
+- Optimize memory usage for **high-resolution medical imaging** 
+
+### 2. Data Augmentation
+
+To reduce overfitting and improve robustness:
+
+- **Elastic deformation** for biological shape variation  
+- **Random Gaussian noise** injection  
+- **Horizontal and vertical flips**  
+- **Test-Time Augmentation (TTA)** with averaged predictions 
+
+### 3. Model Architecture
+
+- **U-Net convolutional neural network** for semantic segmentation  
+- Encoder–decoder with **skip connections** for precise localization  
+- Designed for **biomedical pixel-wise prediction tasks** 
+
+### 4. Training Strategy
+
+- Trained on **NVIDIA Tesla P100 GPU**  
+- **Early stopping** and **learning rate decay** applied  
+- Careful **train/validation split** due to limited data 
+
+---
+
+## Loss Functions
+
+Two segmentation losses were evaluated:
+
+- **Dice Loss** – measures overlap similarity between prediction and ground truth  
+- **Focal Tversky Loss** – balances false positives/negatives and improves difficult segmentation cases 
+
+---
+
+## Results & Impact
+
+The proposed pipeline demonstrates:
+
+- Effective **semantic vessel segmentation** from HiP-CT data  
+- Sensitivity of performance to **augmentation, preprocessing, and loss design**  
+- Potential applications in **vascular simulation, biomedical analysis, and clinical research** 

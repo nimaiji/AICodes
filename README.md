@@ -2,11 +2,10 @@
 
 In the rapidly evolving landscape of technology, the integration of Artificial Intelligence (AI) and Machine Learning (ML) algorithms has become pivotal in enhancing the capabilities of applications across diverse domains. This repository is dedicated to sharing foundational and practical algorithms, providing a valuable resource for developers seeking to harness the power of AI and ML in their projects. 
 
-## Contributing
-We welcome contributions from the community to enrich and expand the repository. Please refer to the [contribution guidelines](CONTRIBUTING.md) to learn how you can contribute to this collaborative effort.
-
 ## List of Existing Projects:
 
+### Large Language Models
+* [Chain of Questions: Guiding Multimodal Curiosity in Language Models]()
 
 ### Image Segmentation
 * [Human Blood Vessel Segmentation](https://github.com/nimaiji/AICodes/tree/master/Semantic%20Segmentation/Blood%20Vessel%20Segmentation)
