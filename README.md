@@ -5,7 +5,7 @@ In the rapidly evolving landscape of technology, the integration of Artificial I
 ## List of Existing Projects:
 
 ### Large Language Models
-* [Chain of Questions: Guiding Multimodal Curiosity in Language Models]()
+* [Chain of Questions: Guiding Multimodal Curiosity in Language Models](https://github.com/nimaiji/AICodes/tree/master/LLM/CoQ)
 
 ### Image Segmentation
 * [Human Blood Vessel Segmentation](https://github.com/nimaiji/AICodes/tree/master/Semantic%20Segmentation/Blood%20Vessel%20Segmentation)
