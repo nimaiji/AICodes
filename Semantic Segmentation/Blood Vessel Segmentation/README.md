@@ -1,9 +1,8 @@
 # Human Blood Vessel Segmentation
 
-**Paper:** *[Google Drive](https://drive.google.com/file/d/1Ilpa29iZdfE5dXlGCFHlxyfi3Nm9_Wap/view?usp=sharing)*  
-**Code:** *[Notebook](main-exp.ipynb)*  
-**Kaggle:** [Competition](https://www.kaggle.com/competitions/blood-vessel-segmentation)
----
+> Paper: [Google Drive](https://drive.google.com/file/d/1Ilpa29iZdfE5dXlGCFHlxyfi3Nm9_Wap/view?usp=sharing)  
+> Code: [Notebook](main-exp.ipynb) 
+> Kaggle: [Competition](https://www.kaggle.com/competitions/blood-vessel-segmentation)
 
 ## Overview
 
@@ -16,7 +15,7 @@ Accurate vessel segmentation can support:
 - Analysis of **vasculature variations** across demographics
 - Automated replacement of **time-consuming manual annotation** in medical research 
 
----
+
 
 ## Abstract (Short)
 
@@ -24,7 +23,7 @@ We propose a deep learning framework for **pixel-wise segmentation of human vasc
 The pipeline includes **normalization, resizing, elastic deformation, Gaussian noise, flipping, and test-time augmentation**, alongside **Dice Loss** and **Focal Tversky Loss** comparisons during training on a **Tesla P100 GPU**.  
 Results demonstrate how preprocessing choices, augmentation, and loss functions influence segmentation performance and biomedical applicability.
 
----
+
 
 ## Dataset
 
@@ -33,7 +32,7 @@ Results demonstrate how preprocessing choices, augmentation, and loss functions 
 - Separate **image–label pairs** for supervised learning  
 - Limited dataset size, motivating **augmentation and careful train/validation splitting** 
 
----
+
 
 ## Methodology
 
@@ -64,7 +63,7 @@ To reduce overfitting and improve robustness:
 - **Early stopping** and **learning rate decay** applied  
 - Careful **train/validation split** due to limited data 
 
----
+
 
 ## Loss Functions
 
@@ -73,7 +72,7 @@ Two segmentation losses were evaluated:
 - **Dice Loss** – measures overlap similarity between prediction and ground truth  
 - **Focal Tversky Loss** – balances false positives/negatives and improves difficult segmentation cases 
 
----
+
 
 ## Results & Impact
 
